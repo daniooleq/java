@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Zadanie 3</title>
+		<meta charset="utf-8"></meta>
+		<style type="text/css">
+			body	{
+					font-family:Arial;
+					font-size:20px;
+					}
+
+			li,p	{
+					font-family:Arial;
+					font-size:16px;
+					}
+		</style>
+	</head>
+
+	<body>
+		<span style="font-weight:bold">Co to jest funkcja?</span><br />
+		<ul>
+			<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,</li>
+			<li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,</li>
+			<li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b),</li>
+			<li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <span style="font-weight:bold">return.</span></li>
+		</ul>
+
+		<span style="font-weight:bold; text-decoration:underline">Wybrane metody obiektu document</span><br />
+		<table border="1">
+			<tr>
+				<th>metoda</th>
+				<th>opis</th>
+			</tr>
+			
+			<tr>
+				<td>
+					getElementById(„id”)
+				</td>
+				<td>
+					dostęp do wszystkich elementów o konkretnej wartości atrybutu id
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					getElementByTagName(„znacznik”)
+				</td>
+				<td>
+					dostęp do wszystkich elementów o typie znacznika, np. P lub DIV
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					getElementByName(„nazwa”)
+				</td>
+				<td>
+					dostęp do wszystkich elementów o konkretnej wartości atrybutu
+				</td>
+			</tr>
+		</table>
+		
+		<span style="font-weight:bold; text-decoration:underline">
+		Właściwości tak pobranego elementu to:</span><br />
+		<ul>
+			<li><span style="font-weight:bold">innerHTML</span> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli,</li>
+			<li><span style="font-weight:bold">innerText</span> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,</li>
+			<li><span style="font-weight:bold">className</span> – umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+		</ul>
+		
+		Przykład:<br />
+		<textarea>
+			<!DOCTYPE html>
+				<head>
+					<title> Przykłady dostępu do elementów </title>
+					<meta charset="utf-8">
+					<style type="text/css">
+						.wyroznienieCzerwone { color: Red; font-weight: 600; }
+					</style>
+				</head>
+			<body>
+				<div id="nazwa"></div>
+				<script>
+					document.getElementById("nazwa").innerHTML = "Witaj";
+					document.getElementById("nazwa").className = "wyroznienieCzerwone";
+				</script>
+			</body>
+		</textarea cols="50">
+	</body>
+</html>

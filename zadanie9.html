@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Zadanie 9</title>
+		<meta charset="utf-8"></meta>
+	</head>
+
+	<body>
+		<div style="color:green;font-size:31px;">
+			<script language="JavaScript">
+				var D1_sza=prompt("D1 = ","");
+				var G1_sza=prompt("G1 = ","");
+				var D2_sza=prompt("D2 = ","");
+				var G2_sza=prompt("G2 = ","");
+				
+				var ldni_sza;
+				var lgodz1_sza;
+				var lgodz2_sza;
+				var lrazem_sza
+				
+				ldni_sza=(D1_sza-D2_sza)*86400;
+				lgodz_sza=(G1_sza+G2_sza)*3600;
+				
+				lgodz1_sza=3600*G1_sza
+				lgodz2_sza=3600*G2_sza
+				
+				lrazem_sza=ldni_sza-lgodz1_sza-lgodz2_sza;
+				document.write(	"ilość sekund = "+lrazem_sza+" sekund<br>");
+			</script>
+		</div>
+	</body>
+</html>

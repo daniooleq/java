@@ -1,0 +1,32 @@
+<textarea rows="32" cols="120">
+<html>
+	<head>
+		<title>Zadanie 15</title>
+		<meta charset="utf-8"></meta>
+	</head>
+
+	<body>
+		<div style="color:blue;font-size:31px;">
+			<script language="JavaScript">
+				var in_x1 = prompt("x1 = ", "");
+				var in_x2 = prompt("x2 = ", "");
+				
+				var x1_sza = parseFloat(in_x1);
+				var x2_sza = parseFloat(in_x2);
+				
+				var y1 = 3 * Math.pow(x1_sza, (6 / (6 + 2)));
+				var y2 = (2 * Math.cos(x1_sza * Math.PI / 180)) + (2 * Math.sin(x1_sza * Math.PI / 180));
+				var y3 = Math.cbrt(Math.pow(x1_sza, 5) + (2 * Math.pow(x2_sza, 4)));
+				var y4 = Math.abs(x1_sza - x2_sza);
+				var y5 = y3 * y4;
+				
+				document.write(	"x1 = " +in_x1+ "</br>"+
+								"x2 = " +in_x2+ "</br>"+
+								"y1 = " +y1.toFixed(2)+ "</br>"+
+								"y2 = " +y2.toFixed(2)+ "</br>"+
+								"y3 = " +y3.toFixed(2)+ "</br>");
+			</script>
+		</div>
+	</body>
+</html>
+</textarea>

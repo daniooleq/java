@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Przykład 1a</title>
+		<meta charset="utf-8"></meta>
+		<script language="JavaScript">
+			function WinOpen_szalaty()
+			{
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=720,width=1280,top=200,left=200")
+
+				<!-- obraz.html,				 strona do uruchomienia w nowym oknie -->
+				<!-- okienko,					 nazwa okna -->
+				<!-- toolbar=no,				 wyświetlanie paska narzędzi przeglądarki -->
+				<!-- directories=no,			 przyciski nawigacyjne -->
+				<!-- menubar=no,				 wyświetlanie paska menu -->
+				<!-- height=720,				 wysokość okna -->
+				<!-- width=1280,				 szerokość okna -->
+				<!-- top=200,					 pozycja okna od górnej krawędzi ekranu -->
+				<!-- left=200";				 pozycja okna od lewej krawędzi ekranu -->
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_szalaty(' ')">
+		</form>
+	</body>
+</html>
