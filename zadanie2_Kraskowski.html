@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 32px;
+      color: maroon;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <script>
+      var A_kra = parseInt(prompt("Wprowadź wartość A_kra: "));
+      var B_kra = parseInt(prompt("Wprowadź wartość B_kra: "));
+      var C_kra = parseInt(prompt("Wprowadź wartość C_kra: "));
+      var D_kra = parseInt(prompt("Wprowadź wartość D_kra: "));
+
+      var e = A_kra * D_kra + B_kra * C_kra;
+      var f = B_kra * D_kra;
+
+      document.write("<p>A_kra = " + A_kra + "</p>");
+      document.write("<p>B_kra = " + B_kra + "</p>");
+      document.write("<p>C_kra = " + C_kra + "</p>");
+      document.write("<p>D_kra = " + D_kra + "</p>");
+      document.write("<p>" + A_kra + "/" + B_kra + " + " + C_kra + "/" + D_kra + " = " + e + "/" + f + "</p>");
+      document.write("<p>(2/3)<sup>2</sup> = " + Math.pow(2/3, 2) + "</p>");
+    </script>
+  </div>
+</body>
+</html>
